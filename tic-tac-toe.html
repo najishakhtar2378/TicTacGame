@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>tic-toc-toe</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #548687;
+            text-align: center;
+        }
+        .container{
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .game{
+            height: 60vmin;
+            width: 60vmin;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1vmin;
+        }
+        .box{
+            height: 18vmin;
+            width: 18vmin;
+            border-radius: 1rem;
+            border: none;
+            box-shadow: 0 0 1rem rgba(0, 0,0,0.3);
+            font-size: 8vmin;
+            color: #b0413e;
+            background-color: #ffffc7;
+        }
+        #reset{
+            padding: 1rem;
+            font-size: 1.25rem;
+            background-color: #191913;
+            color: white;
+            border-radius: 1rem;
+            border: none;
+        }
+        #new-btn{
+            padding: 1rem;
+            font-size: 1.25rem;
+            background-color: #191913;
+            color: white;
+            border-radius: 1rem;
+            border: none;
+        }
+        #msg{
+            color: #ffffc7;
+            font-size: 5vmin;
+        }
+        .msg-container{
+            height: 80vmin;
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="msg-container hide"></div>
+    <p id="msg">Winner</p>
+     <button id="new-btn">new game</button>
+   <main>
+    <h1>tic-tac-toe</h1>
+    <div>
+        <div class="container">
+            <div class="game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+        </div>
+        <button id="reset">resetGame</button>
+    </div>
+   </main>
+   <Script src="tic-tac-toe.js"></Script>
+ 
+</body>
+</html>
